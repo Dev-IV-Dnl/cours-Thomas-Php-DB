@@ -1,0 +1,34 @@
+*{
+    font-family: fantasy;
+}
+
+.tout {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cadre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #333;
+    border: 5px solid darkred;
+    border-radius: 15px;
+    color: #F1F1F1;
+    box-shadow: 3px 3px 10px darkred;
+}
+
+.lancer {
+    width: 130px;
+    height: 30px;
+    background-color: darkred;
+    color: #F1F1F1;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #333;
+    cursor: pointer;
+}

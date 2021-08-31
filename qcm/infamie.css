@@ -1,0 +1,70 @@
+:root {
+
+    --col1: #b5c201;
+    --col2: #FF00FF;
+    --col3: #88421D;
+    --col4: #39FF14;
+    --col5: red;
+}
+
+* {
+    user-select: none;
+    font-family: fantasy;
+    text-decoration: line-through;
+    text-decoration: overline;
+    text-decoration: overline;
+}
+
+body {
+    background-color: var(--col2);
+}
+
+h1 {
+    color: var(--col1);
+    font-size: 3rem;
+}
+
+.good {
+    color: var(--col4);
+    font-size: 2rem;
+}
+
+.bad {
+    color: var(--col5);
+    font-size: 2rem;
+}
+
+h4 {
+    color: var(--col3);
+    font-size: 2rem;
+}
+
+.check {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    color: var(--col1);
+    transition: linear 0.15s;
+    border-radius: 15px;
+}
+.check:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px var(--col1);
+}
+
+.submit {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: dashed 5px var(--col2);
+    background-color: var(--col1);
+    transition: linear 0.5s;
+}
+.submit:hover {
+    background-color: #88421D;
+    transform: scale(1.3);
+    border: dotted 10px var(--col4);
+}
