@@ -36,15 +36,19 @@ session_start();
         
         <form method="POST">
             <label for="">Nombre de Dés :</label><br>
-            <input type="number" name="lancer" value="<?= $_POST["lancer"] ?? 1;?>" min="1"><br>
-            <select name="faces" id="">
-                <option value="4">4</option>
-                <option value="6">6</option>
-                <option value="8">8</option>
-                <option value="10">10</option>
-                <option value="12">12</option>
-                <option value="20">20</option>
-            </select>
+            <input class="nombre" type="number" name="lancer" value="<?= $_POST["lancer"] ?? 1;?>" min="1"><br>
+            <label for="">Nombre de faces pour les dés :</label><br>
+            <select name="faces" classe="nombre">
+                <?php
+                foreach([4, 6, 8, 10, 12, 20] as $nbFaces) {
+                    echo "<option value='$nbFaces'";
+                    if ($faces==$nbFaces) {
+                        echo " selected";
+                    }
+                    echo ">$nbFaces</option>";
+                }
+                ?>
+            </select><br>
             <input type="submit" class="lancer" value="Lancer les Dés">
         </form>
 
